@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crear usuario</title>
+    <meta name="description" content="Crea un usuario en BRAND y unite a nuestra familia. Sé el primero en enterarte de descuentos únicos!">
+    <link rel="Shortcut Icon" href="imagenes/Rovel.png" type="image/jpg">
+
+    <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.css">
+    <script src="bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://kit.fontawesome.com/357d076d0b.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="crearusuario">
+    <header class="sticky-top">
+        <div class="container header-container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-6 col-sm-2 col-md-2 col-lg-3">
+                    <div class="titulo__imagen">
+                        <a href="inicio.html" class="navbar-brand">
+                            <img src="imagenes/Rovel.png" alt="Logo" style="width: 60px;">
+                            <h1>Brand</h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-5 col-md-5 col-lg-4">
+                    <div class="barra__busqueda">
+                        <input class="input-search" type="text" placeholder="buscar">
+                    </div>
+                </div>
+                <div class=" col-8 col-sm-5 col-md-5 col-lg-5">
+                    <nav class="menu">
+                        <a href="iniciodesesion.html" class="menu__skinny__window"><button class=""><i
+                                    class="fas fa-user-circle"></i></button></a>
+                        <a href="iniciodesesion.html" class="menu__big__window">Iniciar Sesión</a>
+                        <!-- espacio -->
+                        <a href="crearusuario.html" class="menu__skinny__window"><button class=""><i
+                                    class="fas fa-user-plus"></i></button></a>
+                        <a href="crearusuario.html" class="menu__big__window">Crear Usuario</a>
+                        <!-- espacio -->
+                        <a href="compras.html" class="menu__skinny__window"><button class=""><i
+                                    class="fas fa-cart-arrow-down"></i></button></a>
+                        <a href="compras.html" class="menu__big__window">Carrito</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container contecrearusuario  justify-content-start ">
+        <!-- TITULO -->
+        <div class="row justify-content-start ">
+            <h2 id="crear-un-usuario">Crea un usuario.</h2>
+        </div>
+        <!-- FORMULARIO -->
+        <div class="row justify-content-center formulario ">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-sm-5 nowrap">
+                        <label for="nombreDeLaPersona">Nombre</label>
+                        <input type="text" name="nombreDeLaPersona" required placeholder="Pedro">
+                    </div>
+                    <div class="col-sm-5 nowrap ">
+                        <label for="apellidoDeLaPersona">Apellido</label>
+                        <input type="text" name="apellidoDeLaPersona" required placeholder="Dominguez">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-5 nowrap">
+                        <label for="DNIDeLaPersona">DNI</label>
+                        <input type="" name="DNIDeLaPersona" placeholder="41954782" required>
+                    </div>
+                    <div class="col-sm-5 nowrap ">
+                        <label for="emailDeLaPersona">Email</label>
+                        <input type="email" name="emailDeLaPersona" required placeholder="pedrodominguez@gmail.com">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-5 nowrap">
+                        <section>
+                            <label for="sexo">Sexo</label>
+                            <select name="sexo" id="">
+                                <option value="M">Masculino</option>
+                                <option value="F">Femenino</option>
+                                <option value="NI">Otro</option>
+                            </select>
+                        </section>
+                    </div>
+                    <div class="col-sm-5 nowrap ">
+                        <label for="edadDeLaPersona">Edad</label>
+                        <input type="number" name="edadDeLaPersona" required placeholder="30">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-5 nowrap">
+                        <label for="nombreDeUsurioDeLaPersona">Nombre de Usuario</label>
+                        <input type="text" name="nombreDeUsurioDeLaPersona" required placeholder="Pedritoelmascapo123">
+                    </div>
+                    <div class="col-sm-5 nowrap">
+                        <label for="repetirlaPasswordDeLaPersona">Repetir la Contraseña</label>
+                        <input type="password" name="repetirlaPasswordDeLaPersona" required>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-5 nowrap">
+                        <label for="passwordDeLaPersona">Contraseña</label>
+                        <input type="password" name="passwordDeLaPersona" required placeholder="estanoesmicontraseña">
+                    </div>
+
+                </div>
+                <!-- BOTON DE CREAER USUARIO -->
+                <div class="row justify-content-center align-items-center">
+                    <input id="botondeCrearUsuario" type="submit" value="Crear Usuario">
+                </div>
+            </div>
+
+        </div>
+        <div class="container crear__usuario__con">
+            <div class="row justify-content-center ">
+                <div class="col-sm-6 crear__usuario__con__x">
+                    <a class="conFacebook" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i>   Ingresar con facebook</a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 crear__usuario__con__x ">
+                    <a class="conGoogle" href="https://www.google.com/"> <i class="fab fa-google"></i> Ingresar con Google</a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 crear__usuario__con__x ">
+                    <a class="conApple" href="https://www.apple.com/"> <i class="fab fa-apple"></i>    Ingresar con Apple</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container footer-container align-items-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <ul>
+                        <nav class="menufooter">
+                            <h3 class="footer__link">Ayuda</h3>
+                            <li><a href="" class="footer__link"> FAQ</a></li>
+                            <li><a href="" class="footer__link"> Ubicación</a></li>
+                            <li><a href="" class="footer__link">Consultas comunes </a></li>
+                        </nav>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul>
+                        <nav class="menufooter">
+                            <h3 class="footer__link">
+                                Contacto</h3>
+                            <li><a href="" class="footer__link">Whatsapp</a></li>
+                            <li><a href="" class="footer__link">Local </a></li>
+                        </nav>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul>
+                        <nav class="menufooter">
+                            <h3 class="footer__link">Marcas</h3>
+                            <li> <a href="" class="footer__link"> NVIDIA</a></li>
+                            <li> <a href="" class="footer__link"> AMD</a></li>
+                            <li> <a href="" class="footer__link">INTEL</a></li>
+                        </nav>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<!-- <div class="row justify-content-center">
+                        <div class="col-sm-6">
+                            <label for="DNIDeLaPersona">DNI</label>
+                            <input type="" name="DNIDeLaPersona" placeholder="41954782" required>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="emailDeLaPersona">Email</label>
+                        <input type="email" name="emailDeLaPersona" required placeholder="pedrodominguez@gmail.com">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <section>
+                        <label for="sexo">Sexo</label>
+                        <select name="sexo" id="">
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                            <option value="NI">Otro</option>
+                        </select>
+                    </section>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="edadDeLaPersona">Edad</label>
+                    <input type="number" name="edadDeLaPersona" required placeholder="30">
+                    <br>
+                </div>
+
+                <div class="col-sm-6">
+                    <label for="nombreDeUsurioDeLaPersona">Nombre de Usuario</label>
+                    <input type="text" name="nombreDeUsurioDeLaPersona" required placeholder="Pedritoelmascapo123">
+                </div>
+                <div class="col-sm-6">
+                    <label for="passwordDeLaPersona">Contraseña</label>
+                    <input type="password" name="passwordDeLaPersona" required placeholder="estanoesmicontraseña">
+                </div>
+                <div class="col-sm-6">
+                    <label for="repetirlaPasswordDeLaPersona">Repetir la Contraseña</label>
+                    <input type="password" name="repetirlaPasswordDeLaPersona" required>
+                </div>
+
+            </div> -->
